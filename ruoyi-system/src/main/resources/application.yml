@@ -1,0 +1,24 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: 123456
+  redis:
+    host: localhost
+    port: 6379
+    password:
+
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:13306/ry-vue?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 317900abc
+mybatis:
+  type-aliases-package: com.ruoyi.**.domin
+  mapper-locations: classpath*:mapper/*Mapper.xml
+server:
+  port: 8082
+token:
+  secret: abcdefghijklmnopqrstuvwxyz
+  headName: Authorization
